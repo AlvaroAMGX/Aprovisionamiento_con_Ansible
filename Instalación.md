@@ -5,4 +5,7 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt update
 sudo apt install ansible
 ```
-Luego configuraremos el archivo host de ansible para añadir a nuestra maquina cliente
+Luego configuraremos el archivo host de ansible para añadir a nuestra maquina cliente:
+```bash
+sudo nano /etc/ansible/hosts
+```
