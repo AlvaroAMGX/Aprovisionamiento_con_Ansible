@@ -81,3 +81,4 @@ Si lo hemos realizado todo correctamente podremos deberemos poner en nuestro nav
 ![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible9.png)  
 ![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible10.png)  
 ![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible11.png)  
+Con esto habremos instalado la pila LAMP y wordpress en un cliente usando ansible.
