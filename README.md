@@ -74,3 +74,10 @@ sudo ansible-playbook playbook.yml -u usuario --ask-become-pass
 ```
 Aqui una captura de lo que nos tendria que salir:
 ![instalacion LAMP](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible6.png)
+## Instalación de wordpress
+Si lo hemos realizado todo correctamente podremos deberemos poner en nuestro navegador  http://ip_del_cliente para empezar a instalar wordpress,las siguientes capturas son el proceso de instalación:
+![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible7.png)  
+![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible8.png)  
+![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible9.png)  
+![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible10.png)  
+![foto wordpress](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible11.png)  
