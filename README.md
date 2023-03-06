@@ -17,3 +17,5 @@ Por ultimo copiaremos nuestra clave al cliente con este comando:
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub usuario_del_cliente@ip_Cliente
 ```
+Nos pedira la contraseña y ya habremos añadido nuestra key correctamente:
+![copiar key](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible3.png) 
