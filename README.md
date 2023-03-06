@@ -13,3 +13,7 @@ Ahora vamos a ir a la carpeta .ssh y veremos que hay dos archivos llamados id_rs
 chmod 600 id_rsa
 chmod 600 id_rsa.pub
 ```
+Por ultimo copiaremos nuestra clave al cliente con este comando:
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub usuario_del_cliente@ip_Cliente
+```
