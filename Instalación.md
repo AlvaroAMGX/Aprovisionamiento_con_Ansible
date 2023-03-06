@@ -11,4 +11,4 @@ Para comprobar que lo hemos instalado simplemente pondremos este coamndo:
 ansible --version
 ```
 Aqui podeis ver la respuesta que os deberia dar para comprobar que todo esta instalado correctamente:  
-![version ansible]()
+![version ansible](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible1.png)
