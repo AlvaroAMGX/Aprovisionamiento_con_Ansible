@@ -73,4 +73,4 @@ Y haremos este comando para que empiece a instalarlo todo:
 sudo ansible-playbook playbook.yml -u usuario --ask-become-pass
 ```
 Aqui una captura de lo que nos tendria que salir:
-![instalacion LAMP](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible56.png)
+![instalacion LAMP](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible6.png)
