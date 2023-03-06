@@ -2,6 +2,7 @@
 Primero recordad que hay que hay que tener instalado ansible para hacer un aprovisionamiento:  
 - [Guia de como instalarlo y pre](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/Instalación.md)
 # Aprovisionamiento con Ansible
+## Conectar el maestro con el cliente
 Primero vamos a instalar el servidor ssh en las dos maquinas con este comando:  
 ```bash
 sudo apt install openssh-client openssh-server
@@ -38,3 +39,38 @@ sudo ansible -m ping Client
 ```
 Nos deberia responder de esta manera si lo hemos realizado todo correctamente:
 ![copiar key](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible5.png)
+## Configuración del Playbook e instalación de wordpress
+Primero vamos a clonar un github de playbooks de ansible con este comando:
+```bash
+git clone https://github.com/do-community/ansible-playbooks.git
+```
+Vamos a editar el archvio de default.yml y añadiremos estas lineas:
+```bash
+sudo nano ansible-playbooks/lamp_ubuntu1804/vars/default.yml
+------------------------------------------------------------
+# Dentro añadiremos estas lineas
+---
+#System Settings
+php_modules: [ 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlrpc', 'php-soap', 'php-intl', 'php-zip' ]
+
+#MySQL Settings
+mysql_root_password: "usuario"
+mysql_db: "wordpress"
+mysql_user: "usuario"
+mysql_password: "usuario"
+
+#HTTP Settings
+http_host: "usuario.local"
+http_conf: "usuario.local.conf"
+http_port: "80"
+```
+Por ultimo nos moveremos con este comando a esta ruta:
+```bash
+ cd ansible playbooks/wordpress-lamp_ubuntu1804/
+```
+Y haremos este comando para que empiece a instalarlo todo:
+```bash
+sudo ansible-playbook playbook.yml -u usuario --ask-become-pass
+```
+Aqui una captura de lo que nos tendria que salir:
+![instalacion LAMP](https://github.com/AlvaroAMGX/Aprovisionamiento_con_Ansible/blob/main/imagenes/ansible56.png)
